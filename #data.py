@@ -10,6 +10,7 @@ lightblue=['Lok Ma Chau','University','Sha Tin', 'Kowloon Tong','Mong Kok East']
 purple=['Tseung Kwan O', 'Tiu Keng Leng', 'North Point']
 wholemap=[pink,orange,airport,red,brown,green,blue, lightblue, purple]
 wholemapstations=pink+orange+airport+red+brown+green+blue+lightblue+purple
+colors={0: 'pink', 1: 'orange', 2: 'airport', 3: 'red', 4: 'brown', 5: 'green', 6: 'blue', 7: 'lightblue', 8: 'purple'}
 
 #some dummy variables
 originline=[]
