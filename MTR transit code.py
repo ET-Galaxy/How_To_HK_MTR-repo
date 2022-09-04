@@ -3,10 +3,10 @@ def RequiredPath(origin, dest):
     orange=['Tung Chung', 'Sunny Bay', 'Tsing Yi', 'Lai King', 'Nam Cheong', 'Olympic', 'Kowloon', 'Hong Kong']
     airport=['Expo', 'Airport', 'Tsing Yi', 'Kowloon', 'Hong Kong']
     red=['Tsuen Wan', 'Tai Wo Hau', 'Kwai Hing','Kwai Fong', 'Lai King', 'Mei Foo', 'Lai Chi Kok', 'Prince Edward', 'Mong Kok', 'Tsim Sha Tsui','Admiralty','Hong Kong']
-    brown=['Nam Cheong', 'Yuen Long']
+    brown=["Hong Hum", 'Nam Cheong', 'Yuen Long', "Tin Shui Wai"]
     green=['Mong Kok','Prince Edward', 'Kowloon Tong','Diamond Hill', "Choi Hung",'Ngau Tau Kok','Kowloon Bay', 'Tiu Keng Leng']
     blue=['HKU','Hong Kong', 'Admiralty', "Tin Hau",'Fortress Hill', 'North Point','Chai Wan']
-    lightblue=['Lok Ma Chau','University','Sha Tin', 'Kowloon Tong','Mong Kok East', 'Exhibition Centre', 'Admiralty']
+    lightblue=['Lok Ma Chau','Fanling','University','Sha Tin', 'Kowloon Tong','Mong Kok East', "Hong Hum",'Exhibition Centre', 'Admiralty']
     purple=['Tseung Kwan O', 'Tiu Keng Leng', 'North Point']
     wholemap=[pink,orange,airport,red,brown,green,blue, lightblue, purple]
     wholemapstations=pink+orange+airport+red+brown+green+blue+lightblue+purple
@@ -90,4 +90,4 @@ def RequiredPath(origin, dest):
                     if set(destline)&set(i)!=set():
                         return("Take the following lines "+str([colors[no] for no in i]))
                 originline0=path.copy()
-print(RequiredPath("Disneyland", "Tseung Kwan O"))
+print(RequiredPath("HKU", "Ngau Tau Kok"))
